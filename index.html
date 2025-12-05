@@ -1,0 +1,704 @@
+
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Évasion Équatoriale: Joyaux de l'Atlantique </title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        template: {
+                            sable: '#F3E5AB',
+                            ocre: '#C66B3D',
+                            roche: '#2D2A26',
+                            ciel: '#4A6C6F',
+                            bg: '#FAFAF9'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { overflow-x: hidden; }
+        
+        /* Ligne verticale de la timeline */
+        .timeline-line {
+            position: absolute;
+            left: 24px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: #E5E7EB;
+            z-index: 0;
+        }
+        @media (min-width: 768px) {
+            .timeline-line { left: 50%; margin-left: -1px; }
+        }
+
+        /* Style des cartes Info */
+        .tip-card {
+            border-left: 4px solid #C66B3D;
+            background-color: #FFF7ED;
+        }
+
+        /* Masquer la scrollbar de la nav mobile tout en gardant le scroll */
+        .hide-scroll::-webkit-scrollbar { display: none; }
+        .hide-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-template-bg text-template-roche antialiased">
+
+    <nav id="nav-desktop" class="hidden md:flex fixed top-0 w-full z-50 bg-white/90 backdrop-blur border-b border-gray-200 py-4 px-8 justify-between items-center shadow-sm transition-transform duration-300 -translate-y-full">
+        <a href="#top" class="text-xl font-serif font-bold tracking-widest text-template-roche">Évasion Équatoriale: Joyaux de l'Atlantique</a>
+        <div class="space-x-6 text-sm font-bold text-gray-600">
+            <a href="#jour-1" class="nav-item-desktop hover:text-template-ocre transition">Le Parcours</a>
+            <a href="#pratique" class="nav-item-desktop hover:text-template-ocre transition">Infos Pratiques</a>
+        </div>
+    </nav>
+
+    <nav id="nav-mobile" class="md:hidden fixed top-0 w-full z-50 bg-white/95 backdrop-blur border-b border-gray-200 py-3 pl-4 overflow-x-auto hide-scroll whitespace-nowrap shadow-md transition-transform duration-300 -translate-y-full">
+        <div class="flex space-x-2 pr-4" id="mobile-menu-container">
+            <a href="#top" class="inline-block px-3 py-1 bg-template-roche text-white rounded-full text-xs font-bold shadow-sm">Top</a>
+            
+                <a href="#jour-1" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J1 Arrivée et premières impressions à São Tomé</a>
+            
+                <a href="#jour-2" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J2 Immersion culturelle dans la capitale</a>
+            
+                <a href="#jour-3" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J3 Sur la route du cacao et du café</a>
+            
+                <a href="#jour-4" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J4 Exploration du sud sauvage et ses plages</a>
+            
+                <a href="#jour-5" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J5 Au cœur du Parc Naturel d'Ôbo</a>
+            
+                <a href="#jour-6" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J6 Envol vers Príncipe, l'île paradisiaque</a>
+            
+                <a href="#jour-7" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J7 Plages emblématiques et snorkeling à Príncipe</a>
+            
+                <a href="#jour-8" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J8 Histoire, science et équateur à Príncipe</a>
+            
+                <a href="#jour-9" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J9 Randonnée et cascades au cœur de Príncipe</a>
+            
+                <a href="#jour-10" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J10 Détente ou exploration maritime à Príncipe</a>
+            
+                <a href="#jour-11" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J11 Retour à São Tomé et derniers souvenirs</a>
+            
+                <a href="#jour-12" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J12 Départ de São Tomé</a>
+            
+            <a href="#pratique" class="mobile-link inline-block px-3 py-1 border border-gray-300 text-gray-500 rounded-full text-xs font-bold">Infos</a>
+        </div>
+    </nav>
+
+    <header id="top" class="relative h-[85vh] flex items-center justify-center overflow-hidden pt-12 md:pt-0">
+        
+        <div class="absolute inset-0 bg-black/50 z-10"></div>
+
+        <video autoplay muted loop playsinline 
+               poster="https://images.unsplash.com/photo-1579606946838-6db34433f3c0?q=80&w=2070"
+               class="absolute inset-0 w-full h-full object-cover">
+            <source src="https://videos.pexels.com/video-files/4456988/4456988-hd_1920_1080_25fps.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la vidéo.
+        </video>
+        
+        <div class="relative z-20 text-center text-white px-4 max-w-3xl animate-fade-in-up">
+            <p class="font-sans text-template-sable tracking-[0.3em] mb-4 uppercase text-sm font-semibold">Feuille de Route</p>
+            <h1 class="font-Playfair italic text-5xl md:text-8xl mb-6 leading-tight drop-shadow-lg">Saotomeandprincipe</h1>
+            <p class="font-sans text-lg md:text-xl text-gray-100 mb-10 font-light max-w-2xl mx-auto leading-relaxed">Évasion Équatoriale: Joyaux de l'Atlantique</p>
+            
+            <div class="flex flex-wrap justify-center gap-4 text-sm font-bold mb-10">
+                <span class="bg-white/10 backdrop-blur-md px-5 py-2 rounded-full border border-white/20 shadow-sm">🗓️ 12 jours uniquement</span>
+                <span class="bg-white/10 backdrop-blur-md px-5 py-2 rounded-full border border-white/20 shadow-sm">💰 3200€ / pers</span>
+                <span class="bg-white/10 backdrop-blur-md px-5 py-2 rounded-full border border-white/20 shadow-sm">🛬 Environ 10-12h avec escale depuis Paris</span>
+            </div>
+
+        </div>
+    </header>
+
+    <section id="itineraire" class="max-w-6xl mx-auto px-4 py-20 relative">
+        
+        <div class="text-center mb-16">
+            <span class="text-template-ocre font-bold tracking-widest text-xs uppercase">Le Roadtrip</span>
+            <h2 class="font-serif text-4xl mt-2 text-template-roche">Votre Programme</h2>
+        </div>
+
+        <div class="relative">
+            <div class="timeline-line"></div>
+            
+            
+                <div id="jour-1" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2">Jour 1</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Arrivée et premières impressions à São Tomé</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Après un long voyage, l'arrivée à São Tomé est une immersion douce dans l'ambiance équatoriale. Prenez le temps de vous installer et de ressentir le pouls de la capitale, entre ses bâtiments coloniaux et la brise marine. Une première balade le long du front de mer offre un aperçu charmant de la vie locale et des couleurs vives de l'île.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left">
+                            
+                                <li>🛬 <strong>Arrivée à São Tomé</strong>: Atterrissez à l'aéroport international et laissez-vous envelopper par la chaleur tropicale et l'odeur de la terre humide. Les formalités douanières sont souvent rapides, mais l'accueil est toujours chaleureux.</li>
+                            
+                                <li>🛏️ <strong>Installation à l'hôtel</strong>: Rejoignez votre hébergement pour déposer vos bagages et vous rafraîchir. Choisissez un hôtel confortable en ville pour faciliter vos premières explorations.</li>
+                            
+                                <li>🚶‍♂️ <strong>Balade le long de l'Avenida Marginal</strong>: Promenez-vous sur le front de mer de la capitale, observez les pêcheurs et les passants, et admirez le coucher de soleil sur l'Atlantique. C'est l'introduction parfaite à l'atmosphère décontractée de São Tomé.</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/shepper1/Saotomeandprincipe/main/jour1.jpg" class="w-full h-64 object-cover" alt="Jour 1">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">ℹ️ Visa</p>
+                                <p class="text-gray-700">Vérifiez les exigences de visa pour São Tomé et Príncipe avant votre départ. Pour les citoyens de l'UE, un visa n'est généralement pas requis pour les séjours de moins de 15 jours.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">💰 Monnaie locale</p>
+                                <p class="text-gray-700">La monnaie est le Dobra (STD). Il est conseillé de changer de l'argent à l'aéroport ou dans les banques en ville. Les euros sont parfois acceptés dans les grands hôtels.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-2" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2">Jour 2</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Immersion culturelle dans la capitale</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Plongez au cœur de la vie santoméenne en explorant les marchés vibrants et les vestiges de l'histoire coloniale. La capitale, São Tomé, révèle ses charmes à travers ses couleurs, ses saveurs et ses récits. Entre l'agitation du marché et la sérénité des musées, vous découvrirez l'âme de cette île.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left">
+                            
+                                <li>🛍️ <strong>Visite du Mercado Municipal</strong>: Imprégnez-vous de l'effervescence du marché principal, où les étals débordent de fruits exotiques, d'épices et d'artisanat local. C'est une explosion de couleurs et de parfums, idéale pour découvrir les produits de l'île.</li>
+                            
+                                <li>🏛️ <strong>Exploration du Fort São Sebastião et Musée National</strong>: Découvrez l'histoire coloniale et l'héritage culturel de São Tomé en visitant cette forteresse du XVIe siècle. Le musée abrite des collections fascinantes sur l'esclavage, la culture créole et l'indépendance.</li>
+                            
+                                <li>⛪ <strong>Découverte de la Cathédrale de São Tomé</strong>: Admirez l'architecture coloniale de la cathédrale, un bâtiment emblématique de la ville. Son intérieur simple mais élégant témoigne de la foi et de l'histoire de l'île.</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/shepper1/Saotomeandprincipe/main/jour2.jpg" class="w-full h-64 object-cover" alt="Jour 2">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🥭 Saveurs locales</p>
+                                <p class="text-gray-700">Goûtez aux fruits tropicaux frais comme la mangue, la papaye ou le corossol, directement au marché. N'hésitez pas à demander aux vendeurs de vous faire découvrir leurs spécialités.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🚶‍♀️ À pied</p>
+                                <p class="text-gray-700">La plupart des sites du centre-ville de São Tomé sont accessibles à pied. Prévoyez de bonnes chaussures et de l'eau pour explorer confortablement.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-3" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2">Jour 3</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Sur la route du cacao et du café</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Aujourd'hui, l'intérieur des terres vous ouvre ses portes, révélant le passé agricole de l'île. Les 'roças', anciennes plantations de cacao et de café, racontent une histoire riche et parfois douloureuse. Entre les plantations luxuriantes et les cascades rafraîchissantes, vous percevrez la véritable essence de São Tomé, terre de chocolat.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left">
+                            
+                                <li>🍫 <strong>Visite de la Roça Monte Café</strong>: Explorez l'une des plus grandes et des plus anciennes plantations de café et de cacao de l'île. Apprenez le processus de fabrication du chocolat, de la fève à la tablette, et dégustez des produits locaux.</li>
+                            
+                                <li>💧 <strong>Détente à la Cascata de São Nicolau</strong>: Rafraîchissez-vous près de cette magnifique cascade nichée dans la forêt tropicale. C'est un lieu paisible, idéal pour une pause photo et pour profiter de la nature luxuriante.</li>
+                            
+                                <li>🌿 <strong>Promenade dans la forêt tropicale</strong>: Profitez d'une courte randonnée autour de Monte Café pour observer la flore endémique et la richesse de la biodiversité. Les sons de la jungle sont une expérience immersive.</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/shepper1/Saotomeandprincipe/main/jour3.jpg" class="w-full h-64 object-cover" alt="Jour 3">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🚗 Transports</p>
+                                <p class="text-gray-700">Pour explorer l'intérieur de l'île, il est recommandé de louer un 4x4 avec chauffeur ou de participer à une excursion organisée. Les routes peuvent être en mauvais état.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">☕ Cacao et Café</p>
+                                <p class="text-gray-700">São Tomé est réputée pour la qualité de son cacao. Ne manquez pas d'acheter du chocolat artisanal ou du café local comme souvenir de votre voyage.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-4" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2">Jour 4</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Exploration du sud sauvage et ses plages</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Cap sur le sud de l'île, où la nature sauvage et les plages isolées vous attendent. Des formations rocheuses spectaculaires aux étendues de sable désertes, cette partie de São Tomé est un véritable paradis pour les amoureux de la nature. Gardez l'œil ouvert, car certaines plages sont des sites de ponte pour les tortues marines.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left">
+                            
+                                <li>🌊 <strong>Découverte de Boca do Inferno</strong>: Admirez ce phénomène géologique impressionnant où les vagues s'engouffrent dans une faille rocheuse, créant un souffle spectaculaire. C'est un spectacle naturel puissant et photogénique.</li>
+                            
+                                <li>🐢 <strong>Exploration de Praia Jalé</strong>: Visitez cette plage emblématique, site majeur de ponte pour les tortues marines (selon la saison, de septembre à mars). C'est une occasion unique d'en apprendre davantage sur la conservation de ces espèces.</li>
+                            
+                                <li>🏖️ <strong>Détente à Praia Grande</strong>: Profitez d'un moment de relaxation sur cette longue plage de sable doré, bordée de cocotiers. Idéale pour la baignade ou simplement pour se prélasser au soleil dans un cadre idyllique.</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/shepper1/Saotomeandprincipe/main/jour4.jpg" class="w-full h-64 object-cover" alt="Jour 4">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">☀️ Protection solaire</p>
+                                <p class="text-gray-700">Le soleil équatorial est intense. N'oubliez pas crème solaire, chapeau et lunettes de soleil, même par temps nuageux pour éviter les coups de soleil.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">♻️ Respect de l'environnement</p>
+                                <p class="text-gray-700">Contribuez à la préservation des plages et de la vie marine en ne laissant aucun déchet derrière vous et en respectant les zones de ponte des tortues.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-5" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2">Jour 5</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Au cœur du Parc Naturel d'Ôbo</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Aujourd'hui est dédié à l'exploration du Parc Naturel d'Ôbo, un écrin de biodiversité. Entre les montagnes verdoyantes et les vues imprenables, vous serez émerveillé par la richesse de la faune et de la flore. Le majestueux Pico Cão Grande se dresse comme un symbole de la force de la nature santoméenne, invitant à la contemplation.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left">
+                            
+                                <li>⛰️ <strong>Randonnée dans le Parc Naturel d'Ôbo</strong>: Partez à la découverte des sentiers du parc, réputé pour sa biodiversité exceptionnelle. Accompagné d'un guide local, vous pourrez observer des oiseaux endémiques et une végétation luxuriante.</li>
+                            
+                                <li>📸 <strong>Contemplation du Pico Cão Grande</strong>: Admirez de loin cette aiguille volcanique emblématique, s'élevant majestueusement au-dessus de la forêt. C'est un spectacle naturel saisissant, souvent enveloppé de brume matinale.</li>
+                            
+                                <li>🏊‍♀️ <strong>Baignade à Praia Piscina</strong>: Terminez la journée par une baignade rafraîchissante dans les eaux calmes et cristallines de Praia Piscina, une petite crique naturelle parfaite pour la détente.</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/shepper1/Saotomeandprincipe/main/jour5.jpg" class="w-full h-64 object-cover" alt="Jour 5">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">👟 Équipement</p>
+                                <p class="text-gray-700">Pour la randonnée, prévoyez des chaussures de marche confortables, un imperméable léger et de l'anti-moustique. L'humidité est élevée dans la forêt tropicale.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🦜 Faune</p>
+                                <p class="text-gray-700">Le parc est un paradis pour les ornithologues, avec de nombreuses espèces d'oiseaux endémiques. Soyez attentifs et silencieux pour maximiser vos chances d'observation.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-6" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2">Jour 6</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Envol vers Príncipe, l'île paradisiaque</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">L'aventure continue avec un court vol vers l'île de Príncipe, une perle encore plus préservée et classée réserve de biosphère par l'UNESCO. Ce changement d'île promet une immersion plus profonde dans une nature intacte et une atmosphère encore plus paisible. Préparez-vous à être émerveillé par la beauté sauvage de Príncipe.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left">
+                            
+                                <li>✈️ <strong>Vol vers Príncipe</strong>: Embarquez pour un vol panoramique de courte durée (environ 30 minutes) entre São Tomé et Príncipe. Le survol des îles offre des vues spectaculaires sur les côtes et la forêt dense.</li>
+                            
+                                <li>🛏️ <strong>Installation à l'hôtel à Príncipe</strong>: Une fois arrivé, rejoignez votre hébergement, souvent de charmants éco-lodges intégrés à la nature. Prenez le temps de vous détendre et de vous imprégner de l'ambiance sereine de l'île.</li>
+                            
+                                <li>🚶‍♀️ <strong>Balade dans Santo António</strong>: Explorez la petite capitale de Príncipe, Santo António, la deuxième plus petite capitale du monde. Flânez dans ses rues colorées et découvrez son marché local.</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/shepper1/Saotomeandprincipe/main/jour6.jpg" class="w-full h-64 object-cover" alt="Jour 6">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🛄 Bagages</p>
+                                <p class="text-gray-700">Les vols intérieurs ont souvent des restrictions de poids pour les bagages. Vérifiez avant de partir et prévoyez un sac plus léger pour votre séjour à Príncipe.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🗺️ Orientation</p>
+                                <p class="text-gray-700">Príncipe est plus petite et plus facile à explorer que São Tomé. Une carte ou un guide local sera utile pour découvrir les meilleurs spots et se déplacer.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-7" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2">Jour 7</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Plages emblématiques et snorkeling à Príncipe</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Príncipe est un véritable jardin d'Éden, et aujourd'hui vous explorerez ses plages iconiques, souvent désertes et bordées d'une végétation luxuriante. Les eaux cristallines invitent à la baignade et à la découverte des fonds marins. C'est une journée dédiée à la détente et à l'émerveillement devant la beauté brute de l'île.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left">
+                            
+                                <li>🍌 <strong>Détente à Praia Banana</strong>: Visitez la célèbre Praia Banana, rendue célèbre par une publicité de bière. C'est une crique magnifique, parfaite pour la baignade et la photographie, avec ses cocotiers penchés.</li>
+                            
+                                <li>🐠 <strong>Snorkeling à Praia Boi</strong>: Plongez dans les eaux turquoise de Praia Boi pour une session de snorkeling. Les fonds marins de Príncipe regorgent de poissons colorés et de coraux, offrant un spectacle sous-marin captivant.</li>
+                            
+                                <li>🌴 <strong>Pique-nique sur une plage isolée</strong>: Profitez d'un déjeuner préparé localement sur une plage isolée, accessible en bateau ou après une courte marche. C'est une expérience authentique de l'isolement paradisiaque de Príncipe.</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/shepper1/Saotomeandprincipe/main/jour7.jpg" class="w-full h-64 object-cover" alt="Jour 7">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🚤 Excursions en bateau</p>
+                                <p class="text-gray-700">Pour accéder à certaines des plus belles plages de Príncipe, une excursion en bateau est souvent la meilleure option. Négociez les prix avec les pêcheurs locaux.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">💧 Hydratation</p>
+                                <p class="text-gray-700">Pensez à emporter suffisamment d'eau, car il y a peu de commerces sur les plages isolées de Príncipe. Restez bien hydraté sous le soleil tropical.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-8" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2">Jour 8</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Histoire, science et équateur à Príncipe</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Aujourd'hui, l'histoire et la science se rencontrent à Príncipe. Vous aurez l'opportunité unique de vous tenir sur la ligne de l'équateur, un moment symbolique de votre voyage. La visite d'anciennes roças vous plongera dans le passé de l'île, révélant les défis et les richesses de son héritage colonial.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left">
+                            
+                                <li>🌍 <strong>Visite de la Roça Sundy et la Ligne de l'Équateur</strong>: Explorez cette roça historique où l'astronome Arthur Eddington a vérifié la théorie de la relativité d'Einstein en 1919. Marchez sur la ligne de l'équateur, un moment mémorable.</li>
+                            
+                                <li>🚶‍♂️ <strong>Promenade dans Santo António</strong>: Retournez dans la petite capitale pour flâner, acheter des souvenirs artisanaux et observer la vie quotidienne. Les bâtiments colorés et l'ambiance décontractée sont charmants.</li>
+                            
+                                <li>🍽️ <strong>Dîner de spécialités locales</strong>: Savourez un dîner dans un restaurant local à Santo António, goûtant aux saveurs uniques de la cuisine santoméenne, souvent à base de poisson frais et de produits du terroir.</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/shepper1/Saotomeandprincipe/main/jour8.jpg" class="w-full h-64 object-cover" alt="Jour 8">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">📸 Photo souvenir</p>
+                                <p class="text-gray-700">Ne manquez pas de prendre une photo sur la ligne de l'équateur à Roça Sundy, un point géographique unique au monde. C'est un souvenir inoubliable.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">📚 Histoire scientifique</p>
+                                <p class="text-gray-700">Renseignez-vous sur l'expédition d'Eddington avant votre visite pour apprécier pleinement l'importance historique de Roça Sundy et son rôle dans la science.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-9" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2">Jour 9</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Randonnée et cascades au cœur de Príncipe</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">L'intérieur de Príncipe est un trésor de verdure et de fraîcheur, dominé par le Parc Naturel d'Ôbo. Les randonnées vous mèneront à travers une forêt dense, révélant des cascades cachées et une biodiversité exubérante. C'est une journée pour se connecter profondément avec la nature sauvage et préservée de l'île.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left">
+                            
+                                <li>🌳 <strong>Randonnée dans le Parc Naturel d'Ôbo (Príncipe)</strong>: Explorez les sentiers du parc côté Príncipe, moins fréquenté et encore plus sauvage. Un guide est essentiel pour naviguer dans cette jungle dense et découvrir ses secrets.</li>
+                            
+                                <li>💦 <strong>Découverte des Cascades de Príncipe</strong>: Atteignez des cascades rafraîchissantes au cœur de la forêt, où vous pourrez vous baigner dans des piscines naturelles. C'est une récompense bienvenue après l'effort de la marche.</li>
+                            
+                                <li>🐦 <strong>Observation de la faune endémique</strong>: Avec un peu de chance et la discrétion nécessaire, vous pourrez apercevoir des oiseaux rares et d'autres animaux propres à Príncipe, un véritable sanctuaire de la biodiversité.</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/shepper1/Saotomeandprincipe/main/jour9.jpg" class="w-full h-64 object-cover" alt="Jour 9">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🦟 Anti-moustique</p>
+                                <p class="text-gray-700">Indispensable pour toute excursion dans la forêt, surtout en fin de journée. Privilégiez des produits efficaces et respectueux de l'environnement pour votre confort.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🗣️ Guides locaux</p>
+                                <p class="text-gray-700">Engager un guide local pour les randonnées est non seulement recommandé pour la sécurité, mais aussi pour soutenir l'économie locale et bénéficier de leurs connaissances de la faune et de la flore.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-10" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2">Jour 10</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Détente ou exploration maritime à Príncipe</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Après plusieurs jours d'exploration, cette journée est dédiée à la détente et à l'appréciation des charmes de Príncipe à votre rythme. Que vous choisissiez de vous prélasser sur une plage immaculée ou de partir à l'aventure en mer, l'île vous offre un cadre idyllique pour recharger vos batteries et savourer les derniers moments de ce paradis.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left">
+                            
+                                <li>🧘‍♀️ <strong>Journée libre et détente sur la plage</strong>: Profitez d'une journée sans programme pour vous reposer sur votre plage préférée, lire un livre à l'ombre d'un palmier ou simplement écouter le bruit des vagues. Príncipe est l'endroit idéal pour la sérénité.</li>
+                            
+                                <li>⛵ <strong>Excursion en bateau vers des criques secrètes</strong>: Louez un bateau avec un pêcheur local pour explorer des criques et des plages inaccessibles par la terre. C'est une opportunité de découvrir des paysages encore plus vierges et de nager dans des eaux cristallines.</li>
+                            
+                                <li>🎣 <strong>Pêche traditionnelle</strong>: Si l'envie vous prend, accompagnez des pêcheurs locaux pour une initiation à la pêche traditionnelle. Une expérience authentique et respectueuse des coutumes locales vous attend.</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/shepper1/Saotomeandprincipe/main/jour10.jpg" class="w-full h-64 object-cover" alt="Jour 10">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🌅 Coucher de soleil</p>
+                                <p class="text-gray-700">Ne manquez pas les couchers de soleil spectaculaires sur l'océan, souvent avec des teintes de rouge et d'orange intenses. Un moment magique à savourer pleinement.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🍽️ Cuisine locale</p>
+                                <p class="text-gray-700">Profitez de cette journée pour goûter à d'autres spécialités locales, comme le calulu, un plat mijoté riche en saveurs, ou le poisson grillé frais du jour.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-11" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2">Jour 11</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Retour à São Tomé et derniers souvenirs</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Il est temps de quitter la paisible Príncipe pour un retour à São Tomé, marquant la fin de votre exploration des îles. Cette journée sera l'occasion de faire vos derniers achats de souvenirs et de savourer une dernière fois l'ambiance santoméenne avant le départ. Préparez-vous à emporter avec vous des souvenirs inoubliables de ce voyage.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left">
+                            
+                                <li>✈️ <strong>Vol retour vers São Tomé</strong>: Reprenez le court vol intérieur de Príncipe à São Tomé. Profitez une dernière fois des vues aériennes sur les deux îles et leurs paysages luxuriants.</li>
+                            
+                                <li>🛍️ <strong>Derniers achats de souvenirs</strong>: Profitez de l'après-midi pour acheter les derniers souvenirs artisanaux, du chocolat local, du café ou des objets d'artisanat en bois. Le marché ou les petites boutiques sont de bonnes options.</li>
+                            
+                                <li>🍽️ <strong>Dîner d'adieu</strong>: Savourez un dernier dîner mémorable dans un bon restaurant de São Tomé, peut-être avec vue sur mer, pour clôturer ce magnifique voyage en beauté.</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/shepper1/Saotomeandprincipe/main/jour11.jpg" class="w-full h-64 object-cover" alt="Jour 11">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🍫 Chocolat</p>
+                                <p class="text-gray-700">Le chocolat de São Tomé est de renommée mondiale. C'est un excellent souvenir à rapporter, disponible sous différentes formes et saveurs pour tous les goûts.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🎁 Artisanat</p>
+                                <p class="text-gray-700">Cherchez des sculptures sur bois, des bijoux faits de graines ou des textiles locaux pour des souvenirs uniques et authentiques qui rappelleront votre voyage.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-12" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2">Jour 12</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Départ de São Tomé</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Après avoir exploré les merveilles de São Tomé et Príncipe, il est temps de faire vos adieux à ces îles paradisiaques. Emportez avec vous les souvenirs de plages immaculées, de forêts luxuriantes, de saveurs exotiques et de rencontres chaleureuses. Ce voyage restera gravé dans votre mémoire comme une véritable évasion équatoriale.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left">
+                            
+                                <li>🍳 <strong>Petit-déjeuner et préparation au départ</strong>: Profitez d'un dernier petit-déjeuner local et préparez vos bagages pour le vol retour. Vérifiez que vous n'avez rien oublié avant de partir.</li>
+                            
+                                <li>✈️ <strong>Transfert à l'aéroport et départ</strong>: Rejoignez l'aéroport international de São Tomé pour votre vol retour. Le personnel est généralement serviable et les formalités sont simples et rapides.</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/shepper1/Saotomeandprincipe/main/jour12.jpg" class="w-full h-64 object-cover" alt="Jour 12">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">⏰ Heure d'arrivée à l'aéroport</p>
+                                <p class="text-gray-700">Prévoyez d'arriver à l'aéroport au moins 2-3 heures avant le départ de votre vol international, surtout si vous avez des bagages à enregistrer.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🛂 Documents de voyage</p>
+                                <p class="text-gray-700">Assurez-vous d'avoir votre passeport, billet d'avion et tout autre document nécessaire à portée de main pour le départ afin d'éviter tout désagrément.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+    </section>
+
+    <footer id="pratique" class="bg-white border-t border-gray-200 pt-16 pb-10 scroll-mt-24">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10 mb-12">
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2">
+                    <span>💴</span> Budget
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed"><strong>Budget vol: </strong>1000€/pers (vol A/R depuis Paris, avec escale)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed"><strong>Budget transports: </strong>300€/pers (location 4x4, taxis, vol inter-îles)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed"><strong>Budget repas: </strong>600€/pers (environ 50€/jour pour repas variés)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed"><strong>Budget logement: </strong>1100€/pers (11 nuits en hôtels/éco-lodges de gamme moyenne)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed"><strong>Budget activités: </strong>200€/pers (excursions guidées, droits d'entrée, snorkeling)</p>
+                
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2">
+                    <span>☀️</span> Périodes Idéales
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed">Les périodes idéales pour ce séjour sont les mois de juillet et août (saison sèche) ou de décembre à février.</p>
+                
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2">
+                    <span>🧳</span> À savoir
+                </h4>
+                <ul class="text-sm text-gray-600 space-y-3">
+
+                        <li><strong>☀️ :</strong> Les températures varient entre 25 et 30°C toute l'année. Prévoir des vêtements légers, un maillot de bain et un imperméable léger pour les averses tropicales.</li>
+                    
+                        <li><strong>💳 :</strong> La monnaie est le Dobra (STD). Il est recommandé de changer des Euros ou Dollars US en arrivant. Les cartes bancaires sont acceptées dans les grands hôtels et restaurants, mais le liquide est préférable pour les petits commerces.</li>
+                    
+                        <li><strong>🚗 :</strong> Permis de conduire international recommandé si vous louez un véhicule, mais la location avec chauffeur est souvent préférée en raison de l'état des routes. Conduite à droite.</li>
+                    
+                        <li><strong>📶 :</strong> Acheter une carte SIM locale (CST ou Unitel) est facile et peu coûteux pour rester connecté. Le Wi-Fi est disponible dans la majorité des hébergements.</li>
+                    
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2"><span>🔗</span> Liens Utiles</h4>
+                <ul class="text-sm space-y-3">
+                  <li><a href="https://shepper1.github.io/Saotomeandprincipe/map.html" target="_blank" class="hover:underline flex items-center gap-2"><strong>🗺️ Carte</strong></a></li>
+                    
+                        <li><a href="https://www.saotome.st/" target="_blank" class="hover:underline flex items-center gap-2"><strong>📘 Tourisme São Tomé et Príncipe</strong></a></li>
+                    
+                        <li><a href="https://www.meteoconsult.fr/meteo-afrique/sao-tome-et-principe/meteo-sao-tome-et-principe.php" target="_blank" class="hover:underline flex items-center gap-2"><strong>🌤️ Météo São Tomé</strong></a></li>
+                    
+                        <li><a href="https://www.stpairways.st/" target="_blank" class="hover:underline flex items-center gap-2"><strong>✈️ STP Airways</strong></a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="text-center border-t border-gray-100 pt-8">
+            <p class="font-serif text-2xl text-template-roche mb-2">Saotomeandprincipe</p>
+            <p class="text-xs text-gray-400">© 2025 - Roadmap</p>
+        </div>
+    </footer>
+
+    <script>
+        // 1. Gestion de l'affichage du menu au scroll
+        const navDesktop = document.getElementById('nav-desktop');
+        const navMobile = document.getElementById('nav-mobile');
+        
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                navDesktop.classList.remove('-translate-y-full');
+                navMobile.classList.remove('-translate-y-full');
+            } else {
+                navDesktop.classList.add('-translate-y-full');
+                navMobile.classList.add('-translate-y-full');
+            }
+        });
+
+        // 2. Détection de l'étape active
+        const observerOptions = {
+            root: null,
+            rootMargin: '-40% 0px -60% 0px',
+            threshold: 0
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const activeId = entry.target.id;
+                    
+                    document.querySelectorAll('.mobile-link').forEach(link => {
+                        const linkHref = link.getAttribute('href').substring(1);
+                        if (linkHref === activeId) {
+                            link.classList.remove('bg-gray-100', 'text-gray-700');
+                            link.classList.add('bg-template-ocre', 'text-white', 'shadow-md');
+                            link.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+                        } else {
+                            link.classList.add('bg-gray-100', 'text-gray-700');
+                            link.classList.remove('bg-template-ocre', 'text-white', 'shadow-md');
+                        }
+                    });
+
+                    document.querySelectorAll('.nav-item-desktop').forEach(link => {
+                        const linkHref = link.getAttribute('href').substring(1);
+                        if (activeId.includes('jour') && linkHref === 'jour-1') {
+                            link.classList.add('text-template-ocre');
+                        } else if (activeId === 'pratique' && linkHref === 'pratique') {
+                            link.classList.add('text-template-ocre');
+                        } else {
+                            link.classList.remove('text-template-ocre');
+                        }
+                    });
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('div[id^="jour-"], footer#pratique').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
