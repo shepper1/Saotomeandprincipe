@@ -1,0 +1,381 @@
+{
+  "pays": "São Tomé et Príncipe",
+  "drapeau": "🇸🇹",
+  "symbole": "🌴",
+  "titre": "Évasion Équatoriale: Joyaux de l'Atlantique",
+  "budget_total": "3200€",
+  "duree": "12 jours uniquement",
+  "temps_vol": "Environ 10-12h avec escale",
+  "jours": [
+    {
+      "jour": 1,
+      "symbole": "🛬",
+      "titre": "Arrivée et premières impressions à São Tomé",
+      "legende": "Après un long voyage, l'arrivée à São Tomé est une immersion douce dans l'ambiance équatoriale. Prenez le temps de vous installer et de ressentir le pouls de la capitale, entre ses bâtiments coloniaux et la brise marine. Une première balade le long du front de mer offre un aperçu charmant de la vie locale et des couleurs vives de l'île.",
+      "lieu": "São Tomé (ville)",
+      "activites": [
+        "🛬 <strong>Arrivée à São Tomé</strong>: Atterrissez à l'aéroport international et laissez-vous envelopper par la chaleur tropicale et l'odeur de la terre humide. Les formalités douanières sont souvent rapides, mais l'accueil est toujours chaleureux.",
+        "🛏️ <strong>Installation à l'hôtel</strong>: Rejoignez votre hébergement pour déposer vos bagages et vous rafraîchir. Choisissez un hôtel confortable en ville pour faciliter vos premières explorations.",
+        "🚶‍♂️ <strong>Balade le long de l'Avenida Marginal</strong>: Promenez-vous sur le front de mer de la capitale, observez les pêcheurs et les passants, et admirez le coucher de soleil sur l'Atlantique. C'est l'introduction parfaite à l'atmosphère décontractée de São Tomé."
+      ],
+      "illustration": "jour1.jpg",
+      "encarts": [
+        {
+          "symbole": "ℹ️",
+          "titre": "Visa",
+          "texte": "Vérifiez les exigences de visa pour São Tomé et Príncipe avant votre départ. Pour les citoyens de l'UE, un visa n'est généralement pas requis pour les séjours de moins de 15 jours."
+        },
+        {
+          "symbole": "💰",
+          "titre": "Monnaie locale",
+          "texte": "La monnaie est le Dobra (STD). Il est conseillé de changer de l'argent à l'aéroport ou dans les banques en ville. Les euros sont parfois acceptés dans les grands hôtels."
+        }
+      ]
+    },
+    {
+      "jour": 2,
+      "symbole": "🏛️",
+      "titre": "Immersion culturelle dans la capitale",
+      "legende": "Plongez au cœur de la vie santoméenne en explorant les marchés vibrants et les vestiges de l'histoire coloniale. La capitale, São Tomé, révèle ses charmes à travers ses couleurs, ses saveurs et ses récits. Entre l'agitation du marché et la sérénité des musées, vous découvrirez l'âme de cette île.",
+      "lieu": "São Tomé (ville)",
+      "activites": [
+        "🛍️ <strong>Visite du Mercado Municipal</strong>: Imprégnez-vous de l'effervescence du marché principal, où les étals débordent de fruits exotiques, d'épices et d'artisanat local. C'est une explosion de couleurs et de parfums, idéale pour découvrir les produits de l'île.",
+        "🏛️ <strong>Exploration du Fort São Sebastião et Musée National</strong>: Découvrez l'histoire coloniale et l'héritage culturel de São Tomé en visitant cette forteresse du XVIe siècle. Le musée abrite des collections fascinantes sur l'esclavage, la culture créole et l'indépendance.",
+        "⛪ <strong>Découverte de la Cathédrale de São Tomé</strong>: Admirez l'architecture coloniale de la cathédrale, un bâtiment emblématique de la ville. Son intérieur simple mais élégant témoigne de la foi et de l'histoire de l'île."
+      ],
+      "illustration": "jour2.jpg",
+      "encarts": [
+        {
+          "symbole": "🥭",
+          "titre": "Saveurs locales",
+          "texte": "Goûtez aux fruits tropicaux frais comme la mangue, la papaye ou le corossol, directement au marché. N'hésitez pas à demander aux vendeurs de vous faire découvrir leurs spécialités."
+        },
+        {
+          "symbole": "🚶‍♀️",
+          "titre": "À pied",
+          "texte": "La plupart des sites du centre-ville de São Tomé sont accessibles à pied. Prévoyez de bonnes chaussures et de l'eau pour explorer confortablement."
+        }
+      ]
+    },
+    {
+      "jour": 3,
+      "symbole": "🍫",
+      "titre": "Sur la route du cacao et du café",
+      "legende": "Aujourd'hui, l'intérieur des terres vous ouvre ses portes, révélant le passé agricole de l'île. Les 'roças', anciennes plantations de cacao et de café, racontent une histoire riche et parfois douloureuse. Entre les plantations luxuriantes et les cascades rafraîchissantes, vous percevrez la véritable essence de São Tomé, terre de chocolat.",
+      "lieu": "São Tomé (centre)",
+      "activites": [
+        "🍫 <strong>Visite de la Roça Monte Café</strong>: Explorez l'une des plus grandes et des plus anciennes plantations de café et de cacao de l'île. Apprenez le processus de fabrication du chocolat, de la fève à la tablette, et dégustez des produits locaux.",
+        "💧 <strong>Détente à la Cascata de São Nicolau</strong>: Rafraîchissez-vous près de cette magnifique cascade nichée dans la forêt tropicale. C'est un lieu paisible, idéal pour une pause photo et pour profiter de la nature luxuriante.",
+        "🌿 <strong>Promenade dans la forêt tropicale</strong>: Profitez d'une courte randonnée autour de Monte Café pour observer la flore endémique et la richesse de la biodiversité. Les sons de la jungle sont une expérience immersive."
+      ],
+      "illustration": "jour3.jpg",
+      "encarts": [
+        {
+          "symbole": "🚗",
+          "titre": "Transports",
+          "texte": "Pour explorer l'intérieur de l'île, il est recommandé de louer un 4x4 avec chauffeur ou de participer à une excursion organisée. Les routes peuvent être en mauvais état."
+        },
+        {
+          "symbole": "☕",
+          "titre": "Cacao et Café",
+          "texte": "São Tomé est réputée pour la qualité de son cacao. Ne manquez pas d'acheter du chocolat artisanal ou du café local comme souvenir de votre voyage."
+        }
+      ]
+    },
+    {
+      "jour": 4,
+      "symbole": "🌊",
+      "titre": "Exploration du sud sauvage et ses plages",
+      "legende": "Cap sur le sud de l'île, où la nature sauvage et les plages isolées vous attendent. Des formations rocheuses spectaculaires aux étendues de sable désertes, cette partie de São Tomé est un véritable paradis pour les amoureux de la nature. Gardez l'œil ouvert, car certaines plages sont des sites de ponte pour les tortues marines.",
+      "lieu": "São Tomé (sud)",
+      "activites": [
+        "🌊 <strong>Découverte de Boca do Inferno</strong>: Admirez ce phénomène géologique impressionnant où les vagues s'engouffrent dans une faille rocheuse, créant un souffle spectaculaire. C'est un spectacle naturel puissant et photogénique.",
+        "🐢 <strong>Exploration de Praia Jalé</strong>: Visitez cette plage emblématique, site majeur de ponte pour les tortues marines (selon la saison, de septembre à mars). C'est une occasion unique d'en apprendre davantage sur la conservation de ces espèces.",
+        "🏖️ <strong>Détente à Praia Grande</strong>: Profitez d'un moment de relaxation sur cette longue plage de sable doré, bordée de cocotiers. Idéale pour la baignade ou simplement pour se prélasser au soleil dans un cadre idyllique."
+      ],
+      "illustration": "jour4.jpg",
+      "encarts": [
+        {
+          "symbole": "☀️",
+          "titre": "Protection solaire",
+          "texte": "Le soleil équatorial est intense. N'oubliez pas crème solaire, chapeau et lunettes de soleil, même par temps nuageux pour éviter les coups de soleil."
+        },
+        {
+          "symbole": "♻️",
+          "titre": "Respect de l'environnement",
+          "texte": "Contribuez à la préservation des plages et de la vie marine en ne laissant aucun déchet derrière vous et en respectant les zones de ponte des tortues."
+        }
+      ]
+    },
+    {
+      "jour": 5,
+      "symbole": "⛰️",
+      "titre": "Au cœur du Parc Naturel d'Ôbo",
+      "legende": "Aujourd'hui est dédié à l'exploration du Parc Naturel d'Ôbo, un écrin de biodiversité. Entre les montagnes verdoyantes et les vues imprenables, vous serez émerveillé par la richesse de la faune et de la flore. Le majestueux Pico Cão Grande se dresse comme un symbole de la force de la nature santoméenne, invitant à la contemplation.",
+      "lieu": "São Tomé (sud-est)",
+      "activites": [
+        "⛰️ <strong>Randonnée dans le Parc Naturel d'Ôbo</strong>: Partez à la découverte des sentiers du parc, réputé pour sa biodiversité exceptionnelle. Accompagné d'un guide local, vous pourrez observer des oiseaux endémiques et une végétation luxuriante.",
+        "📸 <strong>Contemplation du Pico Cão Grande</strong>: Admirez de loin cette aiguille volcanique emblématique, s'élevant majestueusement au-dessus de la forêt. C'est un spectacle naturel saisissant, souvent enveloppé de brume matinale.",
+        "🏊‍♀️ <strong>Baignade à Praia Piscina</strong>: Terminez la journée par une baignade rafraîchissante dans les eaux calmes et cristallines de Praia Piscina, une petite crique naturelle parfaite pour la détente."
+      ],
+      "illustration": "jour5.jpg",
+      "encarts": [
+        {
+          "symbole": "👟",
+          "titre": "Équipement",
+          "texte": "Pour la randonnée, prévoyez des chaussures de marche confortables, un imperméable léger et de l'anti-moustique. L'humidité est élevée dans la forêt tropicale."
+        },
+        {
+          "symbole": "🦜",
+          "titre": "Faune",
+          "texte": "Le parc est un paradis pour les ornithologues, avec de nombreuses espèces d'oiseaux endémiques. Soyez attentifs et silencieux pour maximiser vos chances d'observation."
+        }
+      ]
+    },
+    {
+      "jour": 6,
+      "symbole": "✈️",
+      "titre": "Envol vers Príncipe, l'île paradisiaque",
+      "legende": "L'aventure continue avec un court vol vers l'île de Príncipe, une perle encore plus préservée et classée réserve de biosphère par l'UNESCO. Ce changement d'île promet une immersion plus profonde dans une nature intacte et une atmosphère encore plus paisible. Préparez-vous à être émerveillé par la beauté sauvage de Príncipe.",
+      "lieu": "Príncipe",
+      "activites": [
+        "✈️ <strong>Vol vers Príncipe</strong>: Embarquez pour un vol panoramique de courte durée (environ 30 minutes) entre São Tomé et Príncipe. Le survol des îles offre des vues spectaculaires sur les côtes et la forêt dense.",
+        "🛏️ <strong>Installation à l'hôtel à Príncipe</strong>: Une fois arrivé, rejoignez votre hébergement, souvent de charmants éco-lodges intégrés à la nature. Prenez le temps de vous détendre et de vous imprégner de l'ambiance sereine de l'île.",
+        "🚶‍♀️ <strong>Balade dans Santo António</strong>: Explorez la petite capitale de Príncipe, Santo António, la deuxième plus petite capitale du monde. Flânez dans ses rues colorées et découvrez son marché local."
+      ],
+      "illustration": "jour6.jpg",
+      "encarts": [
+        {
+          "symbole": "🛄",
+          "titre": "Bagages",
+          "texte": "Les vols intérieurs ont souvent des restrictions de poids pour les bagages. Vérifiez avant de partir et prévoyez un sac plus léger pour votre séjour à Príncipe."
+        },
+        {
+          "symbole": "🗺️",
+          "titre": "Orientation",
+          "texte": "Príncipe est plus petite et plus facile à explorer que São Tomé. Une carte ou un guide local sera utile pour découvrir les meilleurs spots et se déplacer."
+        }
+      ]
+    },
+    {
+      "jour": 7,
+      "symbole": "🏖️",
+      "titre": "Plages emblématiques et snorkeling à Príncipe",
+      "legende": "Príncipe est un véritable jardin d'Éden, et aujourd'hui vous explorerez ses plages iconiques, souvent désertes et bordées d'une végétation luxuriante. Les eaux cristallines invitent à la baignade et à la découverte des fonds marins. C'est une journée dédiée à la détente et à l'émerveillement devant la beauté brute de l'île.",
+      "lieu": "Príncipe",
+      "activites": [
+        "🍌 <strong>Détente à Praia Banana</strong>: Visitez la célèbre Praia Banana, rendue célèbre par une publicité de bière. C'est une crique magnifique, parfaite pour la baignade et la photographie, avec ses cocotiers penchés.",
+        "🐠 <strong>Snorkeling à Praia Boi</strong>: Plongez dans les eaux turquoise de Praia Boi pour une session de snorkeling. Les fonds marins de Príncipe regorgent de poissons colorés et de coraux, offrant un spectacle sous-marin captivant.",
+        "🌴 <strong>Pique-nique sur une plage isolée</strong>: Profitez d'un déjeuner préparé localement sur une plage isolée, accessible en bateau ou après une courte marche. C'est une expérience authentique de l'isolement paradisiaque de Príncipe."
+      ],
+      "illustration": "jour7.jpg",
+      "encarts": [
+        {
+          "symbole": "🚤",
+          "titre": "Excursions en bateau",
+          "texte": "Pour accéder à certaines des plus belles plages de Príncipe, une excursion en bateau est souvent la meilleure option. Négociez les prix avec les pêcheurs locaux."
+        },
+        {
+          "symbole": "💧",
+          "titre": "Hydratation",
+          "texte": "Pensez à emporter suffisamment d'eau, car il y a peu de commerces sur les plages isolées de Príncipe. Restez bien hydraté sous le soleil tropical."
+        }
+      ]
+    },
+    {
+      "jour": 8,
+      "symbole": "🌍",
+      "titre": "Histoire, science et équateur à Príncipe",
+      "legende": "Aujourd'hui, l'histoire et la science se rencontrent à Príncipe. Vous aurez l'opportunité unique de vous tenir sur la ligne de l'équateur, un moment symbolique de votre voyage. La visite d'anciennes roças vous plongera dans le passé de l'île, révélant les défis et les richesses de son héritage colonial.",
+      "lieu": "Príncipe",
+      "activites": [
+        "🌍 <strong>Visite de la Roça Sundy et la Ligne de l'Équateur</strong>: Explorez cette roça historique où l'astronome Arthur Eddington a vérifié la théorie de la relativité d'Einstein en 1919. Marchez sur la ligne de l'équateur, un moment mémorable.",
+        "🚶‍♂️ <strong>Promenade dans Santo António</strong>: Retournez dans la petite capitale pour flâner, acheter des souvenirs artisanaux et observer la vie quotidienne. Les bâtiments colorés et l'ambiance décontractée sont charmants.",
+        "🍽️ <strong>Dîner de spécialités locales</strong>: Savourez un dîner dans un restaurant local à Santo António, goûtant aux saveurs uniques de la cuisine santoméenne, souvent à base de poisson frais et de produits du terroir."
+      ],
+      "illustration": "jour8.jpg",
+      "encarts": [
+        {
+          "symbole": "📸",
+          "titre": "Photo souvenir",
+          "texte": "Ne manquez pas de prendre une photo sur la ligne de l'équateur à Roça Sundy, un point géographique unique au monde. C'est un souvenir inoubliable."
+        },
+        {
+          "symbole": "📚",
+          "titre": "Histoire scientifique",
+          "texte": "Renseignez-vous sur l'expédition d'Eddington avant votre visite pour apprécier pleinement l'importance historique de Roça Sundy et son rôle dans la science."
+        }
+      ]
+    },
+    {
+      "jour": 9,
+      "symbole": "🌳",
+      "titre": "Randonnée et cascades au cœur de Príncipe",
+      "legende": "L'intérieur de Príncipe est un trésor de verdure et de fraîcheur, dominé par le Parc Naturel d'Ôbo. Les randonnées vous mèneront à travers une forêt dense, révélant des cascades cachées et une biodiversité exubérante. C'est une journée pour se connecter profondément avec la nature sauvage et préservée de l'île.",
+      "lieu": "Príncipe",
+      "activites": [
+        "🌳 <strong>Randonnée dans le Parc Naturel d'Ôbo (Príncipe)</strong>: Explorez les sentiers du parc côté Príncipe, moins fréquenté et encore plus sauvage. Un guide est essentiel pour naviguer dans cette jungle dense et découvrir ses secrets.",
+        "💦 <strong>Découverte des Cascades de Príncipe</strong>: Atteignez des cascades rafraîchissantes au cœur de la forêt, où vous pourrez vous baigner dans des piscines naturelles. C'est une récompense bienvenue après l'effort de la marche.",
+        "🐦 <strong>Observation de la faune endémique</strong>: Avec un peu de chance et la discrétion nécessaire, vous pourrez apercevoir des oiseaux rares et d'autres animaux propres à Príncipe, un véritable sanctuaire de la biodiversité."
+      ],
+      "illustration": "jour9.jpg",
+      "encarts": [
+        {
+          "symbole": "🦟",
+          "titre": "Anti-moustique",
+          "texte": "Indispensable pour toute excursion dans la forêt, surtout en fin de journée. Privilégiez des produits efficaces et respectueux de l'environnement pour votre confort."
+        },
+        {
+          "symbole": "🗣️",
+          "titre": "Guides locaux",
+          "texte": "Engager un guide local pour les randonnées est non seulement recommandé pour la sécurité, mais aussi pour soutenir l'économie locale et bénéficier de leurs connaissances de la faune et de la flore."
+        }
+      ]
+    },
+    {
+      "jour": 10,
+      "symbole": "🧘‍♀️",
+      "titre": "Détente ou exploration maritime à Príncipe",
+      "legende": "Après plusieurs jours d'exploration, cette journée est dédiée à la détente et à l'appréciation des charmes de Príncipe à votre rythme. Que vous choisissiez de vous prélasser sur une plage immaculée ou de partir à l'aventure en mer, l'île vous offre un cadre idyllique pour recharger vos batteries et savourer les derniers moments de ce paradis.",
+      "lieu": "Príncipe",
+      "activites": [
+        "🧘‍♀️ <strong>Journée libre et détente sur la plage</strong>: Profitez d'une journée sans programme pour vous reposer sur votre plage préférée, lire un livre à l'ombre d'un palmier ou simplement écouter le bruit des vagues. Príncipe est l'endroit idéal pour la sérénité.",
+        "⛵ <strong>Excursion en bateau vers des criques secrètes</strong>: Louez un bateau avec un pêcheur local pour explorer des criques et des plages inaccessibles par la terre. C'est une opportunité de découvrir des paysages encore plus vierges et de nager dans des eaux cristallines.",
+        "🎣 <strong>Pêche traditionnelle</strong>: Si l'envie vous prend, accompagnez des pêcheurs locaux pour une initiation à la pêche traditionnelle. Une expérience authentique et respectueuse des coutumes locales vous attend."
+      ],
+      "illustration": "jour10.jpg",
+      "encarts": [
+        {
+          "symbole": "🌅",
+          "titre": "Coucher de soleil",
+          "texte": "Ne manquez pas les couchers de soleil spectaculaires sur l'océan, souvent avec des teintes de rouge et d'orange intenses. Un moment magique à savourer pleinement."
+        },
+        {
+          "symbole": "🍽️",
+          "titre": "Cuisine locale",
+          "texte": "Profitez de cette journée pour goûter à d'autres spécialités locales, comme le calulu, un plat mijoté riche en saveurs, ou le poisson grillé frais du jour."
+        }
+      ]
+    },
+    {
+      "jour": 11,
+      "symbole": "🛍️",
+      "titre": "Retour à São Tomé et derniers souvenirs",
+      "legende": "Il est temps de quitter la paisible Príncipe pour un retour à São Tomé, marquant la fin de votre exploration des îles. Cette journée sera l'occasion de faire vos derniers achats de souvenirs et de savourer une dernière fois l'ambiance santoméenne avant le départ. Préparez-vous à emporter avec vous des souvenirs inoubliables de ce voyage.",
+      "lieu": "São Tomé (ville)",
+      "activites": [
+        "✈️ <strong>Vol retour vers São Tomé</strong>: Reprenez le court vol intérieur de Príncipe à São Tomé. Profitez une dernière fois des vues aériennes sur les deux îles et leurs paysages luxuriants.",
+        "🛍️ <strong>Derniers achats de souvenirs</strong>: Profitez de l'après-midi pour acheter les derniers souvenirs artisanaux, du chocolat local, du café ou des objets d'artisanat en bois. Le marché ou les petites boutiques sont de bonnes options.",
+        "🍽️ <strong>Dîner d'adieu</strong>: Savourez un dernier dîner mémorable dans un bon restaurant de São Tomé, peut-être avec vue sur mer, pour clôturer ce magnifique voyage en beauté."
+      ],
+      "illustration": "jour11.jpg",
+      "encarts": [
+        {
+          "symbole": "🍫",
+          "titre": "Chocolat",
+          "texte": "Le chocolat de São Tomé est de renommée mondiale. C'est un excellent souvenir à rapporter, disponible sous différentes formes et saveurs pour tous les goûts."
+        },
+        {
+          "symbole": "🎁",
+          "titre": "Artisanat",
+          "texte": "Cherchez des sculptures sur bois, des bijoux faits de graines ou des textiles locaux pour des souvenirs uniques et authentiques qui rappelleront votre voyage."
+        }
+      ]
+    },
+    {
+      "jour": 12,
+      "symbole": "🛫",
+      "titre": "Départ de São Tomé",
+      "legende": "Après avoir exploré les merveilles de São Tomé et Príncipe, il est temps de faire vos adieux à ces îles paradisiaques. Emportez avec vous les souvenirs de plages immaculées, de forêts luxuriantes, de saveurs exotiques et de rencontres chaleureuses. Ce voyage restera gravé dans votre mémoire comme une véritable évasion équatoriale.",
+      "lieu": "São Tomé (aéroport)",
+      "activites": [
+        "🍳 <strong>Petit-déjeuner et préparation au départ</strong>: Profitez d'un dernier petit-déjeuner local et préparez vos bagages pour le vol retour. Vérifiez que vous n'avez rien oublié avant de partir.",
+        "✈️ <strong>Transfert à l'aéroport et départ</strong>: Rejoignez l'aéroport international de São Tomé pour votre vol retour. Le personnel est généralement serviable et les formalités sont simples et rapides."
+      ],
+      "illustration": "jour12.jpg",
+      "encarts": [
+        {
+          "symbole": "⏰",
+          "titre": "Heure d'arrivée à l'aéroport",
+          "texte": "Prévoyez d'arriver à l'aéroport au moins 2-3 heures avant le départ de votre vol international, surtout si vous avez des bagages à enregistrer."
+        },
+        {
+          "symbole": "🛂",
+          "titre": "Documents de voyage",
+          "texte": "Assurez-vous d'avoir votre passeport, billet d'avion et tout autre document nécessaire à portée de main pour le départ afin d'éviter tout désagrément."
+        }
+      ]
+    }
+  ],
+  "detail_budget": [
+    {
+      "titre": "Budget vol:",
+      "legende": "1000€/pers (vol A/R depuis Paris, avec escale)",
+      "symbole": "🛬"
+    },
+    {
+      "titre": "Budget transports:",
+      "legende": "300€/pers (location 4x4, taxis, vol inter-îles)",
+      "symbole": "🚆"
+    },
+    {
+      "titre": "Budget repas:",
+      "legende": "600€/pers (environ 50€/jour pour repas variés)",
+      "symbole": "🥗"
+    },
+    {
+      "titre": "Budget logement:",
+      "legende": "1100€/pers (11 nuits en hôtels/éco-lodges de gamme moyenne)",
+      "symbole": "🛏️"
+    },
+    {
+      "titre": "Budget activités:",
+      "legende": "200€/pers (excursions guidées, droits d'entrée, snorkeling)",
+      "symbole": "🎭"
+    }
+  ],
+  "periodes_ideales": [
+    {
+      "titre": "Les périodes idéales pour ce séjour sont les mois de juillet et août (saison sèche) ou de décembre à février.",
+      "symbole": "🌴"
+    }
+  ],
+  "infos_pratiques": [
+    {
+      "titre": "Les températures varient entre 25 et 30°C toute l'année. Prévoir des vêtements légers, un maillot de bain et un imperméable léger pour les averses tropicales.",
+      "symbole": "☀️"
+    },
+    {
+      "titre": "La monnaie est le Dobra (STD). Il est recommandé de changer des Euros ou Dollars US en arrivant. Les cartes bancaires sont acceptées dans les grands hôtels et restaurants, mais le liquide est préférable pour les petits commerces.",
+      "symbole": "💳"
+    },
+    {
+      "titre": "Permis de conduire international recommandé si vous louez un véhicule, mais la location avec chauffeur est souvent préférée en raison de l'état des routes. Conduite à droite.",
+      "symbole": "🚗"
+    },
+    {
+      "titre": "Acheter une carte SIM locale (CST ou Unitel) est facile et peu coûteux pour rester connecté. Le Wi-Fi est disponible dans la majorité des hébergements.",
+      "symbole": "📶"
+    }
+  ],
+  "liens_utiles": [
+    {
+      "legende": "Infos officielles et inspirations",
+      "titre": "Tourisme São Tomé et Príncipe",
+      "url": "https://www.saotome.st/",
+      "symbole": "📘"
+    },
+    {
+      "legende": "Prévisions météo",
+      "titre": "Météo São Tomé",
+      "url": "https://www.meteoconsult.fr/meteo-afrique/sao-tome-et-principe/meteo-sao-tome-et-principe.php",
+      "symbole": "🌤️"
+    },
+    {
+      "legende": "Vols intérieurs entre les îles",
+      "titre": "STP Airways",
+      "url": "https://www.stpairways.st/",
+      "symbole": "✈️"
+    }
+  ]
+}
